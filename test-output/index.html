@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>AllinOne.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">56 methods, 5 failed,   51 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="insertAdvertiser">insertAdvertiser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="insertAdvertiserGroup">insertAdvertiserGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="insertAdvertiserLead">insertAdvertiserLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="insertPublisherGroup">insertPublisherGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="insertPublisherUser">insertPublisherUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SuppressionTest" class="method navigator-link" hash-for-method="SuppressionStatus">SuppressionStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="deleteAdvertiserLead">deleteAdvertiserLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="deleteAdvertiserUser">deleteAdvertiserUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.CreativeTest" class="method navigator-link" hash-for-method="deleteCreativeGroup">deleteCreativeGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="deletePublisherLead">deletePublisherLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="deletePublisherUser">deletePublisherUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SuppressionTest" class="method navigator-link" hash-for-method="downloadSuppression">downloadSuppression</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="getAdvertiserLead">getAdvertiserLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="getAdvertiserSettings">getAdvertiserSettings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="getAdvertiserUser">getAdvertiserUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.CreativeTest" class="method navigator-link" hash-for-method="getCreativeGroupList">getCreativeGroupList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="getPublisherLead">getPublisherLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="getPublisherUser">getPublisherUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="getSingleAdvertiser">getSingleAdvertiser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="getSingleAdvertiserGroup">getSingleAdvertiserGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.CreativeTest" class="method navigator-link" hash-for-method="getSingleCreative">getSingleCreative</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.CreativeTest" class="method navigator-link" hash-for-method="getSingleCreativeGroup">getSingleCreativeGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="getSinglePublisher">getSinglePublisher</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="getSinglePublisherGroup">getSinglePublisherGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SuppressionTest" class="method navigator-link" hash-for-method="getSingleSuppression">getSingleSuppression</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SuppressionTest" class="method navigator-link" hash-for-method="getSuppressionList">getSuppressionList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SuppressionTest" class="method navigator-link" hash-for-method="getUnsubscribeCount">getUnsubscribeCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.CreativeTest" class="method navigator-link" hash-for-method="getlistCreatives">getlistCreatives</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="insertAdvertiserUser">insertAdvertiserUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="insertPublisher">insertPublisher</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="insertPublisherLead">insertPublisherLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="inviteResend">inviteResend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="inviteResend">inviteResend</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="listAdvertiserGroups">listAdvertiserGroups</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="listAdvertiserLead">listAdvertiserLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="listAdvertiserUser">listAdvertiserUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="listPublisherGroups">listPublisherGroups</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="listPublisherLead">listPublisherLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="listPublisherUser">listPublisherUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="listPublishers">listPublishers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="listadvertisers">listadvertisers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SignIn" class="method navigator-link" hash-for-method="signin">signin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.SuppressionTest" class="method navigator-link" hash-for-method="suppressionRefresh">suppressionRefresh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="updateAdvertiser">updateAdvertiser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="updateAdvertiserGroup">updateAdvertiserGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="updateAdvertiserGroupStatus">updateAdvertiserGroupStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="updateAdvertiserLead">updateAdvertiserLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="updateAdvertiserUser">updateAdvertiserUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.AdvertiserTest" class="method navigator-link" hash-for-method="updateAdvertiserUserStatus">updateAdvertiserUserStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.CreativeTest" class="method navigator-link" hash-for-method="updateCreativeGroup">updateCreativeGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="updatePublisher">updatePublisher</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="updatePublisherGroup">updatePublisherGroup</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="updatePublisherGroupStatus">updatePublisherGroupStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="updatePublisherLead">updatePublisherLead</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="updatePublisherUser">updatePublisherUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="api.test.PublisherTest" class="method navigator-link" hash-for-method="updatePublisherUserStatus">updatePublisherUserStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.PublisherTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertPublisherGroup">
+                  </a> <!-- insertPublisherGroup -->
+                  <span class="method-name">insertPublisherGroup</span>
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:570)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:780)
+	at api.test.PublisherTest.insertPublisherGroup(PublisherTest.java:284)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertPublisherUser">
+                  </a> <!-- insertPublisherUser -->
+                  <span class="method-name">insertPublisherUser</span>
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;Publisher_user_id&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:570)
+	at org.json.JSONObject.getInt(JSONObject.java:742)
+	at api.test.PublisherTest.insertPublisherUser(PublisherTest.java:350)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">api.test.AdvertiserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertAdvertiser">
+                  </a> <!-- insertAdvertiser -->
+                  <span class="method-name">insertAdvertiser</span>
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiser(AdvertiserTest.java:247)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertAdvertiserGroup">
+                  </a> <!-- insertAdvertiserGroup -->
+                  <span class="method-name">insertAdvertiserGroup</span>
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiserGroup(AdvertiserTest.java:296)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertAdvertiserLead">
+                  </a> <!-- insertAdvertiserLead -->
+                  <span class="method-name">insertAdvertiserLead</span>
+                  <div class="stack-trace">org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiserLead(AdvertiserTest.java:426)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.PublisherTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePublisherLead">
+                  </a> <!-- deletePublisherLead -->
+                  <span class="method-name">deletePublisherLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePublisherUser">
+                  </a> <!-- deletePublisherUser -->
+                  <span class="method-name">deletePublisherUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPublisherLead">
+                  </a> <!-- getPublisherLead -->
+                  <span class="method-name">getPublisherLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getPublisherUser">
+                  </a> <!-- getPublisherUser -->
+                  <span class="method-name">getPublisherUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSinglePublisher">
+                  </a> <!-- getSinglePublisher -->
+                  <span class="method-name">getSinglePublisher</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSinglePublisherGroup">
+                  </a> <!-- getSinglePublisherGroup -->
+                  <span class="method-name">getSinglePublisherGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertPublisher">
+                  </a> <!-- insertPublisher -->
+                  <span class="method-name">insertPublisher</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertPublisherLead">
+                  </a> <!-- insertPublisherLead -->
+                  <span class="method-name">insertPublisherLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inviteResend">
+                  </a> <!-- inviteResend -->
+                  <span class="method-name">inviteResend</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listPublisherGroups">
+                  </a> <!-- listPublisherGroups -->
+                  <span class="method-name">listPublisherGroups</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listPublisherLead">
+                  </a> <!-- listPublisherLead -->
+                  <span class="method-name">listPublisherLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listPublisherUser">
+                  </a> <!-- listPublisherUser -->
+                  <span class="method-name">listPublisherUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listPublishers">
+                  </a> <!-- listPublishers -->
+                  <span class="method-name">listPublishers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePublisher">
+                  </a> <!-- updatePublisher -->
+                  <span class="method-name">updatePublisher</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePublisherGroup">
+                  </a> <!-- updatePublisherGroup -->
+                  <span class="method-name">updatePublisherGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePublisherGroupStatus">
+                  </a> <!-- updatePublisherGroupStatus -->
+                  <span class="method-name">updatePublisherGroupStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePublisherLead">
+                  </a> <!-- updatePublisherLead -->
+                  <span class="method-name">updatePublisherLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePublisherUser">
+                  </a> <!-- updatePublisherUser -->
+                  <span class="method-name">updatePublisherUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePublisherUserStatus">
+                  </a> <!-- updatePublisherUserStatus -->
+                  <span class="method-name">updatePublisherUserStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.SuppressionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SuppressionStatus">
+                  </a> <!-- SuppressionStatus -->
+                  <span class="method-name">SuppressionStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="downloadSuppression">
+                  </a> <!-- downloadSuppression -->
+                  <span class="method-name">downloadSuppression</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleSuppression">
+                  </a> <!-- getSingleSuppression -->
+                  <span class="method-name">getSingleSuppression</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSuppressionList">
+                  </a> <!-- getSuppressionList -->
+                  <span class="method-name">getSuppressionList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getUnsubscribeCount">
+                  </a> <!-- getUnsubscribeCount -->
+                  <span class="method-name">getUnsubscribeCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="suppressionRefresh">
+                  </a> <!-- suppressionRefresh -->
+                  <span class="method-name">suppressionRefresh</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.AdvertiserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAdvertiserLead">
+                  </a> <!-- deleteAdvertiserLead -->
+                  <span class="method-name">deleteAdvertiserLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteAdvertiserUser">
+                  </a> <!-- deleteAdvertiserUser -->
+                  <span class="method-name">deleteAdvertiserUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdvertiserLead">
+                  </a> <!-- getAdvertiserLead -->
+                  <span class="method-name">getAdvertiserLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdvertiserSettings">
+                  </a> <!-- getAdvertiserSettings -->
+                  <span class="method-name">getAdvertiserSettings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAdvertiserUser">
+                  </a> <!-- getAdvertiserUser -->
+                  <span class="method-name">getAdvertiserUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleAdvertiser">
+                  </a> <!-- getSingleAdvertiser -->
+                  <span class="method-name">getSingleAdvertiser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleAdvertiserGroup">
+                  </a> <!-- getSingleAdvertiserGroup -->
+                  <span class="method-name">getSingleAdvertiserGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertAdvertiserUser">
+                  </a> <!-- insertAdvertiserUser -->
+                  <span class="method-name">insertAdvertiserUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inviteResend">
+                  </a> <!-- inviteResend -->
+                  <span class="method-name">inviteResend</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listAdvertiserGroups">
+                  </a> <!-- listAdvertiserGroups -->
+                  <span class="method-name">listAdvertiserGroups</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listAdvertiserLead">
+                  </a> <!-- listAdvertiserLead -->
+                  <span class="method-name">listAdvertiserLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listAdvertiserUser">
+                  </a> <!-- listAdvertiserUser -->
+                  <span class="method-name">listAdvertiserUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listadvertisers">
+                  </a> <!-- listadvertisers -->
+                  <span class="method-name">listadvertisers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAdvertiser">
+                  </a> <!-- updateAdvertiser -->
+                  <span class="method-name">updateAdvertiser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAdvertiserGroup">
+                  </a> <!-- updateAdvertiserGroup -->
+                  <span class="method-name">updateAdvertiserGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAdvertiserGroupStatus">
+                  </a> <!-- updateAdvertiserGroupStatus -->
+                  <span class="method-name">updateAdvertiserGroupStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAdvertiserLead">
+                  </a> <!-- updateAdvertiserLead -->
+                  <span class="method-name">updateAdvertiserLead</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAdvertiserUser">
+                  </a> <!-- updateAdvertiserUser -->
+                  <span class="method-name">updateAdvertiserUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateAdvertiserUserStatus">
+                  </a> <!-- updateAdvertiserUserStatus -->
+                  <span class="method-name">updateAdvertiserUserStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.CreativeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCreativeGroup">
+                  </a> <!-- deleteCreativeGroup -->
+                  <span class="method-name">deleteCreativeGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getCreativeGroupList">
+                  </a> <!-- getCreativeGroupList -->
+                  <span class="method-name">getCreativeGroupList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleCreative">
+                  </a> <!-- getSingleCreative -->
+                  <span class="method-name">getSingleCreative</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSingleCreativeGroup">
+                  </a> <!-- getSingleCreativeGroup -->
+                  <span class="method-name">getSingleCreativeGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getlistCreatives">
+                  </a> <!-- getlistCreatives -->
+                  <span class="method-name">getlistCreatives</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateCreativeGroup">
+                  </a> <!-- updateCreativeGroup -->
+                  <span class="method-name">updateCreativeGroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">api.test.SignIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signin">
+                  </a> <!-- signin -->
+                  <span class="method-name">signin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/home/active30/eclipse-workspace/Opend_V3_RestAssuredFramework/AllinOne.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;api.utilities.Listener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;api.test.SignIn&quot;/&gt;
+      &lt;class name=&quot;api.test.AdvertiserTest&quot;/&gt;
+      &lt;class name=&quot;api.test.PublisherTest&quot;/&gt;
+      &lt;class name=&quot;api.test.SuppressionTest&quot;/&gt;
+      &lt;class name=&quot;api.test.CreativeTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(56);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'signin')
+data.setCell(0, 2, 'api.test.SignIn')
+data.setCell(0, 3, 3096);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'insertAdvertiser')
+data.setCell(1, 2, 'api.test.AdvertiserTest')
+data.setCell(1, 3, 946);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getSuppressionList')
+data.setCell(2, 2, 'api.test.SuppressionTest')
+data.setCell(2, 3, 944);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'insertPublisher')
+data.setCell(3, 2, 'api.test.PublisherTest')
+data.setCell(3, 3, 876);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SuppressionStatus')
+data.setCell(4, 2, 'api.test.SuppressionTest')
+data.setCell(4, 3, 852);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'deleteAdvertiserUser')
+data.setCell(5, 2, 'api.test.AdvertiserTest')
+data.setCell(5, 3, 641);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'listPublishers')
+data.setCell(6, 2, 'api.test.PublisherTest')
+data.setCell(6, 3, 612);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'listadvertisers')
+data.setCell(7, 2, 'api.test.AdvertiserTest')
+data.setCell(7, 3, 575);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'insertAdvertiserGroup')
+data.setCell(8, 2, 'api.test.AdvertiserTest')
+data.setCell(8, 3, 575);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'updateAdvertiserGroup')
+data.setCell(9, 2, 'api.test.AdvertiserTest')
+data.setCell(9, 3, 570);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'insertPublisherLead')
+data.setCell(10, 2, 'api.test.PublisherTest')
+data.setCell(10, 3, 570);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'listAdvertiserUser')
+data.setCell(11, 2, 'api.test.AdvertiserTest')
+data.setCell(11, 3, 547);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'insertAdvertiserLead')
+data.setCell(12, 2, 'api.test.AdvertiserTest')
+data.setCell(12, 3, 538);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'insertPublisherUser')
+data.setCell(13, 2, 'api.test.PublisherTest')
+data.setCell(13, 3, 537);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'insertAdvertiserUser')
+data.setCell(14, 2, 'api.test.AdvertiserTest')
+data.setCell(14, 3, 527);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'updateAdvertiserUser')
+data.setCell(15, 2, 'api.test.AdvertiserTest')
+data.setCell(15, 3, 521);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'getAdvertiserUser')
+data.setCell(16, 2, 'api.test.AdvertiserTest')
+data.setCell(16, 3, 514);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'getlistCreatives')
+data.setCell(17, 2, 'api.test.CreativeTest')
+data.setCell(17, 3, 503);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'updatePublisher')
+data.setCell(18, 2, 'api.test.PublisherTest')
+data.setCell(18, 3, 500);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'getUnsubscribeCount')
+data.setCell(19, 2, 'api.test.SuppressionTest')
+data.setCell(19, 3, 491);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'updatePublisherLead')
+data.setCell(20, 2, 'api.test.PublisherTest')
+data.setCell(20, 3, 490);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'downloadSuppression')
+data.setCell(21, 2, 'api.test.SuppressionTest')
+data.setCell(21, 3, 486);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'getSingleSuppression')
+data.setCell(22, 2, 'api.test.SuppressionTest')
+data.setCell(22, 3, 486);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'updateCreativeGroup')
+data.setCell(23, 2, 'api.test.CreativeTest')
+data.setCell(23, 3, 485);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'getSingleAdvertiser')
+data.setCell(24, 2, 'api.test.AdvertiserTest')
+data.setCell(24, 3, 484);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'getSinglePublisher')
+data.setCell(25, 2, 'api.test.PublisherTest')
+data.setCell(25, 3, 482);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'getSingleCreativeGroup')
+data.setCell(26, 2, 'api.test.CreativeTest')
+data.setCell(26, 3, 479);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'suppressionRefresh')
+data.setCell(27, 2, 'api.test.SuppressionTest')
+data.setCell(27, 3, 477);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'inviteResend')
+data.setCell(28, 2, 'api.test.AdvertiserTest')
+data.setCell(28, 3, 474);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'getPublisherLead')
+data.setCell(29, 2, 'api.test.PublisherTest')
+data.setCell(29, 3, 474);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'updateAdvertiserLead')
+data.setCell(30, 2, 'api.test.AdvertiserTest')
+data.setCell(30, 3, 473);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'getAdvertiserSettings')
+data.setCell(31, 2, 'api.test.AdvertiserTest')
+data.setCell(31, 3, 473);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'getAdvertiserLead')
+data.setCell(32, 2, 'api.test.AdvertiserTest')
+data.setCell(32, 3, 473);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'getSingleAdvertiserGroup')
+data.setCell(33, 2, 'api.test.AdvertiserTest')
+data.setCell(33, 3, 470);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'updateAdvertiser')
+data.setCell(34, 2, 'api.test.AdvertiserTest')
+data.setCell(34, 3, 468);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'updateAdvertiserUserStatus')
+data.setCell(35, 2, 'api.test.AdvertiserTest')
+data.setCell(35, 3, 463);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'getSinglePublisherGroup')
+data.setCell(36, 2, 'api.test.PublisherTest')
+data.setCell(36, 3, 463);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'listAdvertiserLead')
+data.setCell(37, 2, 'api.test.AdvertiserTest')
+data.setCell(37, 3, 462);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'updatePublisherUserStatus')
+data.setCell(38, 2, 'api.test.PublisherTest')
+data.setCell(38, 3, 462);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'updateAdvertiserGroupStatus')
+data.setCell(39, 2, 'api.test.AdvertiserTest')
+data.setCell(39, 3, 459);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'deleteCreativeGroup')
+data.setCell(40, 2, 'api.test.CreativeTest')
+data.setCell(40, 3, 458);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'listPublisherGroups')
+data.setCell(41, 2, 'api.test.PublisherTest')
+data.setCell(41, 3, 457);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'updatePublisherGroupStatus')
+data.setCell(42, 2, 'api.test.PublisherTest')
+data.setCell(42, 3, 456);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'inviteResend')
+data.setCell(43, 2, 'api.test.PublisherTest')
+data.setCell(43, 3, 456);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'getCreativeGroupList')
+data.setCell(44, 2, 'api.test.CreativeTest')
+data.setCell(44, 3, 455);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'listAdvertiserGroups')
+data.setCell(45, 2, 'api.test.AdvertiserTest')
+data.setCell(45, 3, 454);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'updatePublisherUser')
+data.setCell(46, 2, 'api.test.PublisherTest')
+data.setCell(46, 3, 454);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'insertPublisherGroup')
+data.setCell(47, 2, 'api.test.PublisherTest')
+data.setCell(47, 3, 454);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'getSingleCreative')
+data.setCell(48, 2, 'api.test.CreativeTest')
+data.setCell(48, 3, 453);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'listPublisherLead')
+data.setCell(49, 2, 'api.test.PublisherTest')
+data.setCell(49, 3, 453);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'deletePublisherLead')
+data.setCell(50, 2, 'api.test.PublisherTest')
+data.setCell(50, 3, 450);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'deletePublisherUser')
+data.setCell(51, 2, 'api.test.PublisherTest')
+data.setCell(51, 3, 448);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'updatePublisherGroup')
+data.setCell(52, 2, 'api.test.PublisherTest')
+data.setCell(52, 3, 443);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'deleteAdvertiserLead')
+data.setCell(53, 2, 'api.test.AdvertiserTest')
+data.setCell(53, 3, 440);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'getPublisherUser')
+data.setCell(54, 2, 'api.test.PublisherTest')
+data.setCell(54, 3, 434);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'listPublisherUser')
+data.setCell(55, 2, 'api.test.PublisherTest')
+data.setCell(55, 3, 427);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.SignIn</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">signin</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.AdvertiserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setupdata</span>
+                <span class="method-start">3130 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertAdvertiser</span>
+                <span class="method-start">3395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listadvertisers</span>
+                <span class="method-start">4347 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSingleAdvertiser</span>
+                <span class="method-start">4924 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateAdvertiser</span>
+                <span class="method-start">5411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdvertiserSettings</span>
+                <span class="method-start">5882 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertAdvertiserGroup</span>
+                <span class="method-start">6358 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listAdvertiserGroups</span>
+                <span class="method-start">6938 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSingleAdvertiserGroup</span>
+                <span class="method-start">7395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateAdvertiserGroup</span>
+                <span class="method-start">7867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateAdvertiserGroupStatus</span>
+                <span class="method-start">8440 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">insertAdvertiserUser</span>
+                <span class="method-start">8901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listAdvertiserUser</span>
+                <span class="method-start">9431 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdvertiserUser</span>
+                <span class="method-start">9981 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateAdvertiserUser</span>
+                <span class="method-start">10498 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">inviteResend</span>
+                <span class="method-start">11024 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateAdvertiserUserStatus</span>
+                <span class="method-start">11501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteAdvertiserUser</span>
+                <span class="method-start">11968 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertAdvertiserLead</span>
+                <span class="method-start">12613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listAdvertiserLead</span>
+                <span class="method-start">13156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getAdvertiserLead</span>
+                <span class="method-start">13622 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateAdvertiserLead</span>
+                <span class="method-start">14098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteAdvertiserLead</span>
+                <span class="method-start">14574 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.PublisherTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">publisherRequestBodySetup</span>
+                <span class="method-start">15017 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">insertPublisher</span>
+                <span class="method-start">15097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listPublishers</span>
+                <span class="method-start">15976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSinglePublisher</span>
+                <span class="method-start">16590 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePublisher</span>
+                <span class="method-start">17074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertPublisherGroup</span>
+                <span class="method-start">17578 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listPublisherGroups</span>
+                <span class="method-start">18035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSinglePublisherGroup</span>
+                <span class="method-start">18493 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePublisherGroup</span>
+                <span class="method-start">18958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePublisherGroupStatus</span>
+                <span class="method-start">19404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertPublisherUser</span>
+                <span class="method-start">19863 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listPublisherUser</span>
+                <span class="method-start">20404 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPublisherUser</span>
+                <span class="method-start">20833 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePublisherUser</span>
+                <span class="method-start">21270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">inviteResend</span>
+                <span class="method-start">21727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePublisherUserStatus</span>
+                <span class="method-start">22186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletePublisherUser</span>
+                <span class="method-start">22649 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">insertPublisherLead</span>
+                <span class="method-start">23099 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listPublisherLead</span>
+                <span class="method-start">23672 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getPublisherLead</span>
+                <span class="method-start">24127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePublisherLead</span>
+                <span class="method-start">24604 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletePublisherLead</span>
+                <span class="method-start">25097 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.SuppressionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">suppressionSetup</span>
+                <span class="method-start">25550 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">getSuppressionList</span>
+                <span class="method-start">25560 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSingleSuppression</span>
+                <span class="method-start">26505 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">downloadSuppression</span>
+                <span class="method-start">26994 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SuppressionStatus</span>
+                <span class="method-start">27482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getUnsubscribeCount</span>
+                <span class="method-start">28335 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">suppressionRefresh</span>
+                <span class="method-start">28828 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">api.test.CreativeTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getCreativeGroupList</span>
+                <span class="method-start">29307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSingleCreativeGroup</span>
+                <span class="method-start">29766 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateCreativeGroup</span>
+                <span class="method-start">30248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteCreativeGroup</span>
+                <span class="method-start">30736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getlistCreatives</span>
+                <span class="method-start">31195 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getSingleCreative</span>
+                <span class="method-start">31700 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

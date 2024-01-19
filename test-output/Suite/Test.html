@@ -1,0 +1,559 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>51/5/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 19 15:02:58 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>32 seconds (32467 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.AdvertiserTest.insertAdvertiser()'><b>insertAdvertiser</b><br>Test class: api.test.AdvertiserTest</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiser(AdvertiserTest.java:247)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1500512598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1500512598'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiser(AdvertiserTest.java:247)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.insertAdvertiserLead()'><b>insertAdvertiserLead</b><br>Test class: api.test.AdvertiserTest</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiserLead(AdvertiserTest.java:426)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace708590084", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace708590084'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiserLead(AdvertiserTest.java:426)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.insertPublisherGroup()'><b>insertPublisherGroup</b><br>Test class: api.test.PublisherTest</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:570)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:780)
+	at api.test.PublisherTest.insertPublisherGroup(PublisherTest.java:284)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2044784651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2044784651'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:570)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:780)
+	at api.test.PublisherTest.insertPublisherGroup(PublisherTest.java:284)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.insertPublisherUser()'><b>insertPublisherUser</b><br>Test class: api.test.PublisherTest</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;Publisher_user_id&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:570)
+	at org.json.JSONObject.getInt(JSONObject.java:742)
+	at api.test.PublisherTest.insertPublisherUser(PublisherTest.java:350)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1836226750", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1836226750'><pre>org.json.JSONException: JSONObject[&quot;Publisher_user_id&quot;] not found.
+	at org.json.JSONObject.get(JSONObject.java:570)
+	at org.json.JSONObject.getInt(JSONObject.java:742)
+	at api.test.PublisherTest.insertPublisherUser(PublisherTest.java:350)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.insertAdvertiserGroup()'><b>insertAdvertiserGroup</b><br>Test class: api.test.AdvertiserTest</td>
+<td><div><pre>org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiserGroup(AdvertiserTest.java:296)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace411382490", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace411382490'><pre>org.json.JSONException: JSONObject[&quot;data&quot;] is not a JSONObject (class org.json.JSONObject$Null : null).
+	at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+	at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+	at api.test.AdvertiserTest.insertAdvertiserGroup(AdvertiserTest.java:296)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.AdvertiserTest.updateAdvertiserGroup()'><b>updateAdvertiserGroup</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.updateAdvertiserUserStatus()'><b>updateAdvertiserUserStatus</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.listPublisherGroups()'><b>listPublisherGroups</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.deleteAdvertiserLead()'><b>deleteAdvertiserLead</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.updatePublisherGroupStatus()'><b>updatePublisherGroupStatus</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.insertPublisherLead()'><b>insertPublisherLead</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.insertPublisher()'><b>insertPublisher</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.CreativeTest.getlistCreatives()'><b>getlistCreatives</b><br>Test class: api.test.CreativeTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.CreativeTest@7975d1d8</td></tr>
+<tr>
+<td title='api.test.SuppressionTest.downloadSuppression()'><b>downloadSuppression</b><br>Test class: api.test.SuppressionTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.SuppressionTest@33bc72d1</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.updateAdvertiserUser()'><b>updateAdvertiserUser</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.getPublisherUser()'><b>getPublisherUser</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.SignIn.signin()'><b>signin</b><br>Test class: api.test.SignIn</td>
+<td></td>
+<td>3</td>
+<td>api.test.SignIn@5d0bf09b</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.getSingleAdvertiserGroup()'><b>getSingleAdvertiserGroup</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.updatePublisherGroup()'><b>updatePublisherGroup</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.updateAdvertiserGroupStatus()'><b>updateAdvertiserGroupStatus</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.SuppressionTest.suppressionRefresh()'><b>suppressionRefresh</b><br>Test class: api.test.SuppressionTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.SuppressionTest@33bc72d1</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.deleteAdvertiserUser()'><b>deleteAdvertiserUser</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.listAdvertiserLead()'><b>listAdvertiserLead</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.insertAdvertiserUser()'><b>insertAdvertiserUser</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.deletePublisherUser()'><b>deletePublisherUser</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.SuppressionTest.getUnsubscribeCount()'><b>getUnsubscribeCount</b><br>Test class: api.test.SuppressionTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.SuppressionTest@33bc72d1</td></tr>
+<tr>
+<td title='api.test.PublisherTest.deletePublisherLead()'><b>deletePublisherLead</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.CreativeTest.getSingleCreativeGroup()'><b>getSingleCreativeGroup</b><br>Test class: api.test.CreativeTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.CreativeTest@7975d1d8</td></tr>
+<tr>
+<td title='api.test.SuppressionTest.getSingleSuppression()'><b>getSingleSuppression</b><br>Test class: api.test.SuppressionTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.SuppressionTest@33bc72d1</td></tr>
+<tr>
+<td title='api.test.CreativeTest.getCreativeGroupList()'><b>getCreativeGroupList</b><br>Test class: api.test.CreativeTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.CreativeTest@7975d1d8</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.listAdvertiserGroups()'><b>listAdvertiserGroups</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.inviteResend()'><b>inviteResend</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.getSinglePublisherGroup()'><b>getSinglePublisherGroup</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.CreativeTest.deleteCreativeGroup()'><b>deleteCreativeGroup</b><br>Test class: api.test.CreativeTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.CreativeTest@7975d1d8</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.listAdvertiserUser()'><b>listAdvertiserUser</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.updateAdvertiserLead()'><b>updateAdvertiserLead</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.updateAdvertiser()'><b>updateAdvertiser</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.getAdvertiserSettings()'><b>getAdvertiserSettings</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.getSinglePublisher()'><b>getSinglePublisher</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.updatePublisherUser()'><b>updatePublisherUser</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.listPublisherUser()'><b>listPublisherUser</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.SuppressionTest.SuppressionStatus()'><b>SuppressionStatus</b><br>Test class: api.test.SuppressionTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.SuppressionTest@33bc72d1</td></tr>
+<tr>
+<td title='api.test.CreativeTest.getSingleCreative()'><b>getSingleCreative</b><br>Test class: api.test.CreativeTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.CreativeTest@7975d1d8</td></tr>
+<tr>
+<td title='api.test.PublisherTest.updatePublisherUserStatus()'><b>updatePublisherUserStatus</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.getPublisherLead()'><b>getPublisherLead</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.SuppressionTest.getSuppressionList()'><b>getSuppressionList</b><br>Test class: api.test.SuppressionTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.SuppressionTest@33bc72d1</td></tr>
+<tr>
+<td title='api.test.PublisherTest.listPublishers()'><b>listPublishers</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.CreativeTest.updateCreativeGroup()'><b>updateCreativeGroup</b><br>Test class: api.test.CreativeTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.CreativeTest@7975d1d8</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.getAdvertiserUser()'><b>getAdvertiserUser</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.getSingleAdvertiser()'><b>getSingleAdvertiser</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.listadvertisers()'><b>listadvertisers</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.updatePublisherLead()'><b>updatePublisherLead</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.listPublisherLead()'><b>listPublisherLead</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.AdvertiserTest.getAdvertiserLead()'><b>getAdvertiserLead</b><br>Test class: api.test.AdvertiserTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.AdvertiserTest@16eb3ea3</td></tr>
+<tr>
+<td title='api.test.PublisherTest.inviteResend()'><b>inviteResend</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+<tr>
+<td title='api.test.PublisherTest.updatePublisher()'><b>updatePublisher</b><br>Test class: api.test.PublisherTest</td>
+<td></td>
+<td>0</td>
+<td>api.test.PublisherTest@273444fe</td></tr>
+</table><p>
+</body>
+</html>

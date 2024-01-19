@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="56" passed="51" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-19T15:02:58 IST" name="Suite" finished-at="2024-01-19T15:03:30 IST" duration-ms="32467">
+    <groups>
+    </groups>
+    <test started-at="2024-01-19T15:02:58 IST" name="Test" finished-at="2024-01-19T15:03:30 IST" duration-ms="32467">
+      <class name="api.test.PublisherTest">
+        <test-method is-config="true" signature="publisherRequestBodySetup()[pri:0, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:13 IST" name="publisherRequestBodySetup" finished-at="2024-01-19T15:03:13 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publisherRequestBodySetup -->
+        <test-method signature="insertPublisher()[pri:1, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:13 IST" name="insertPublisher" finished-at="2024-01-19T15:03:14 IST" duration-ms="876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertPublisher -->
+        <test-method signature="listPublishers()[pri:2, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:14 IST" name="listPublishers" finished-at="2024-01-19T15:03:14 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listPublishers -->
+        <test-method signature="getSinglePublisher()[pri:3, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:14 IST" name="getSinglePublisher" finished-at="2024-01-19T15:03:15 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSinglePublisher -->
+        <test-method signature="updatePublisher()[pri:4, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:15 IST" name="updatePublisher" finished-at="2024-01-19T15:03:15 IST" duration-ms="500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePublisher -->
+        <test-method signature="insertPublisherGroup()[pri:6, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:15 IST" name="insertPublisherGroup" finished-at="2024-01-19T15:03:16 IST" duration-ms="454" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["data"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["data"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getJSONObject(JSONObject.java:780)
+at api.test.PublisherTest.insertPublisherGroup(PublisherTest.java:284)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertPublisherGroup -->
+        <test-method signature="listPublisherGroups()[pri:7, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:16 IST" name="listPublisherGroups" finished-at="2024-01-19T15:03:16 IST" duration-ms="457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listPublisherGroups -->
+        <test-method signature="getSinglePublisherGroup()[pri:8, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:16 IST" name="getSinglePublisherGroup" finished-at="2024-01-19T15:03:17 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSinglePublisherGroup -->
+        <test-method signature="updatePublisherGroup()[pri:9, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:17 IST" name="updatePublisherGroup" finished-at="2024-01-19T15:03:17 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePublisherGroup -->
+        <test-method signature="updatePublisherGroupStatus()[pri:10, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:17 IST" name="updatePublisherGroupStatus" finished-at="2024-01-19T15:03:18 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePublisherGroupStatus -->
+        <test-method signature="insertPublisherUser()[pri:12, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:18 IST" name="insertPublisherUser" finished-at="2024-01-19T15:03:18 IST" duration-ms="537" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["Publisher_user_id"] not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["Publisher_user_id"] not found.
+at org.json.JSONObject.get(JSONObject.java:570)
+at org.json.JSONObject.getInt(JSONObject.java:742)
+at api.test.PublisherTest.insertPublisherUser(PublisherTest.java:350)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertPublisherUser -->
+        <test-method signature="listPublisherUser()[pri:13, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:18 IST" name="listPublisherUser" finished-at="2024-01-19T15:03:19 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listPublisherUser -->
+        <test-method signature="getPublisherUser()[pri:14, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:19 IST" name="getPublisherUser" finished-at="2024-01-19T15:03:19 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPublisherUser -->
+        <test-method signature="updatePublisherUser()[pri:15, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:19 IST" name="updatePublisherUser" finished-at="2024-01-19T15:03:20 IST" duration-ms="454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePublisherUser -->
+        <test-method signature="inviteResend()[pri:16, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:20 IST" name="inviteResend" finished-at="2024-01-19T15:03:20 IST" duration-ms="456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteResend -->
+        <test-method signature="updatePublisherUserStatus()[pri:17, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:20 IST" name="updatePublisherUserStatus" finished-at="2024-01-19T15:03:20 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePublisherUserStatus -->
+        <test-method signature="deletePublisherUser()[pri:18, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:20 IST" name="deletePublisherUser" finished-at="2024-01-19T15:03:21 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePublisherUser -->
+        <test-method signature="insertPublisherLead()[pri:19, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:21 IST" name="insertPublisherLead" finished-at="2024-01-19T15:03:22 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertPublisherLead -->
+        <test-method signature="listPublisherLead()[pri:20, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:22 IST" name="listPublisherLead" finished-at="2024-01-19T15:03:22 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listPublisherLead -->
+        <test-method signature="getPublisherLead()[pri:21, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:22 IST" name="getPublisherLead" finished-at="2024-01-19T15:03:22 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPublisherLead -->
+        <test-method signature="updatePublisherLead()[pri:22, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:22 IST" name="updatePublisherLead" finished-at="2024-01-19T15:03:23 IST" duration-ms="490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePublisherLead -->
+        <test-method signature="deletePublisherLead()[pri:23, instance:api.test.PublisherTest@273444fe]" started-at="2024-01-19T15:03:23 IST" name="deletePublisherLead" finished-at="2024-01-19T15:03:23 IST" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePublisherLead -->
+      </class> <!-- api.test.PublisherTest -->
+      <class name="api.test.AdvertiserTest">
+        <test-method is-config="true" signature="setupdata()[pri:0, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:01 IST" name="setupdata" finished-at="2024-01-19T15:03:01 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupdata -->
+        <test-method signature="insertAdvertiser()[pri:1, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:01 IST" name="insertAdvertiser" finished-at="2024-01-19T15:03:02 IST" duration-ms="946" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["data"] is not a JSONObject (class org.json.JSONObject$Null : null).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["data"] is not a JSONObject (class org.json.JSONObject$Null : null).
+at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+at api.test.AdvertiserTest.insertAdvertiser(AdvertiserTest.java:247)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertAdvertiser -->
+        <test-method signature="listadvertisers()[pri:2, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:02 IST" name="listadvertisers" finished-at="2024-01-19T15:03:03 IST" duration-ms="575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listadvertisers -->
+        <test-method signature="getSingleAdvertiser()[pri:3, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:03 IST" name="getSingleAdvertiser" finished-at="2024-01-19T15:03:03 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleAdvertiser -->
+        <test-method signature="updateAdvertiser()[pri:4, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:03 IST" name="updateAdvertiser" finished-at="2024-01-19T15:03:04 IST" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAdvertiser -->
+        <test-method signature="getAdvertiserSettings()[pri:5, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:04 IST" name="getAdvertiserSettings" finished-at="2024-01-19T15:03:04 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdvertiserSettings -->
+        <test-method signature="insertAdvertiserGroup()[pri:6, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:04 IST" name="insertAdvertiserGroup" finished-at="2024-01-19T15:03:05 IST" duration-ms="575" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["data"] is not a JSONObject (class org.json.JSONObject$Null : null).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["data"] is not a JSONObject (class org.json.JSONObject$Null : null).
+at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+at api.test.AdvertiserTest.insertAdvertiserGroup(AdvertiserTest.java:296)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertAdvertiserGroup -->
+        <test-method signature="listAdvertiserGroups()[pri:7, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:05 IST" name="listAdvertiserGroups" finished-at="2024-01-19T15:03:05 IST" duration-ms="454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listAdvertiserGroups -->
+        <test-method signature="getSingleAdvertiserGroup()[pri:8, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:05 IST" name="getSingleAdvertiserGroup" finished-at="2024-01-19T15:03:06 IST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleAdvertiserGroup -->
+        <test-method signature="updateAdvertiserGroup()[pri:9, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:06 IST" name="updateAdvertiserGroup" finished-at="2024-01-19T15:03:06 IST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAdvertiserGroup -->
+        <test-method signature="updateAdvertiserGroupStatus()[pri:10, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:06 IST" name="updateAdvertiserGroupStatus" finished-at="2024-01-19T15:03:07 IST" duration-ms="459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAdvertiserGroupStatus -->
+        <test-method signature="insertAdvertiserUser()[pri:12, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:07 IST" name="insertAdvertiserUser" finished-at="2024-01-19T15:03:07 IST" duration-ms="527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertAdvertiserUser -->
+        <test-method signature="listAdvertiserUser()[pri:13, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:07 IST" name="listAdvertiserUser" finished-at="2024-01-19T15:03:08 IST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listAdvertiserUser -->
+        <test-method signature="getAdvertiserUser()[pri:14, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:08 IST" name="getAdvertiserUser" finished-at="2024-01-19T15:03:08 IST" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdvertiserUser -->
+        <test-method signature="updateAdvertiserUser()[pri:15, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:08 IST" name="updateAdvertiserUser" finished-at="2024-01-19T15:03:09 IST" duration-ms="521" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAdvertiserUser -->
+        <test-method signature="inviteResend()[pri:16, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:09 IST" name="inviteResend" finished-at="2024-01-19T15:03:09 IST" duration-ms="474" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inviteResend -->
+        <test-method signature="updateAdvertiserUserStatus()[pri:17, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:09 IST" name="updateAdvertiserUserStatus" finished-at="2024-01-19T15:03:10 IST" duration-ms="463" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAdvertiserUserStatus -->
+        <test-method signature="deleteAdvertiserUser()[pri:18, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:10 IST" name="deleteAdvertiserUser" finished-at="2024-01-19T15:03:10 IST" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAdvertiserUser -->
+        <test-method signature="insertAdvertiserLead()[pri:19, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:10 IST" name="insertAdvertiserLead" finished-at="2024-01-19T15:03:11 IST" duration-ms="538" status="FAIL">
+          <exception class="org.json.JSONException">
+            <message>
+              <![CDATA[JSONObject["data"] is not a JSONObject (class org.json.JSONObject$Null : null).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.json.JSONException: JSONObject["data"] is not a JSONObject (class org.json.JSONObject$Null : null).
+at org.json.JSONObject.wrongValueFormatException(JSONObject.java:2702)
+at org.json.JSONObject.getJSONObject(JSONObject.java:784)
+at api.test.AdvertiserTest.insertAdvertiserLead(AdvertiserTest.java:426)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.json.JSONException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertAdvertiserLead -->
+        <test-method signature="listAdvertiserLead()[pri:20, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:11 IST" name="listAdvertiserLead" finished-at="2024-01-19T15:03:11 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listAdvertiserLead -->
+        <test-method signature="getAdvertiserLead()[pri:21, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:11 IST" name="getAdvertiserLead" finished-at="2024-01-19T15:03:12 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAdvertiserLead -->
+        <test-method signature="updateAdvertiserLead()[pri:22, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:12 IST" name="updateAdvertiserLead" finished-at="2024-01-19T15:03:12 IST" duration-ms="473" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAdvertiserLead -->
+        <test-method signature="deleteAdvertiserLead()[pri:23, instance:api.test.AdvertiserTest@16eb3ea3]" started-at="2024-01-19T15:03:12 IST" name="deleteAdvertiserLead" finished-at="2024-01-19T15:03:13 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAdvertiserLead -->
+      </class> <!-- api.test.AdvertiserTest -->
+      <class name="api.test.SignIn">
+        <test-method signature="signin()[pri:1, instance:api.test.SignIn@5d0bf09b]" started-at="2024-01-19T15:02:58 IST" name="signin" finished-at="2024-01-19T15:03:01 IST" duration-ms="3096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signin -->
+      </class> <!-- api.test.SignIn -->
+      <class name="api.test.SuppressionTest">
+        <test-method is-config="true" signature="suppressionSetup()[pri:0, instance:api.test.SuppressionTest@33bc72d1]" started-at="2024-01-19T15:03:23 IST" name="suppressionSetup" finished-at="2024-01-19T15:03:23 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suppressionSetup -->
+        <test-method signature="getSuppressionList()[pri:2, instance:api.test.SuppressionTest@33bc72d1]" started-at="2024-01-19T15:03:23 IST" name="getSuppressionList" finished-at="2024-01-19T15:03:24 IST" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuppressionList -->
+        <test-method signature="getSingleSuppression()[pri:3, instance:api.test.SuppressionTest@33bc72d1]" started-at="2024-01-19T15:03:24 IST" name="getSingleSuppression" finished-at="2024-01-19T15:03:25 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleSuppression -->
+        <test-method signature="downloadSuppression()[pri:4, instance:api.test.SuppressionTest@33bc72d1]" started-at="2024-01-19T15:03:25 IST" name="downloadSuppression" finished-at="2024-01-19T15:03:25 IST" duration-ms="486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadSuppression -->
+        <test-method signature="SuppressionStatus()[pri:5, instance:api.test.SuppressionTest@33bc72d1]" started-at="2024-01-19T15:03:25 IST" name="SuppressionStatus" finished-at="2024-01-19T15:03:26 IST" duration-ms="852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuppressionStatus -->
+        <test-method signature="getUnsubscribeCount()[pri:6, instance:api.test.SuppressionTest@33bc72d1]" started-at="2024-01-19T15:03:26 IST" name="getUnsubscribeCount" finished-at="2024-01-19T15:03:27 IST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUnsubscribeCount -->
+        <test-method signature="suppressionRefresh()[pri:7, instance:api.test.SuppressionTest@33bc72d1]" started-at="2024-01-19T15:03:27 IST" name="suppressionRefresh" finished-at="2024-01-19T15:03:27 IST" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- suppressionRefresh -->
+      </class> <!-- api.test.SuppressionTest -->
+      <class name="api.test.CreativeTest">
+        <test-method signature="getCreativeGroupList()[pri:2, instance:api.test.CreativeTest@7975d1d8]" started-at="2024-01-19T15:03:27 IST" name="getCreativeGroupList" finished-at="2024-01-19T15:03:28 IST" duration-ms="455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCreativeGroupList -->
+        <test-method signature="getSingleCreativeGroup()[pri:3, instance:api.test.CreativeTest@7975d1d8]" started-at="2024-01-19T15:03:28 IST" name="getSingleCreativeGroup" finished-at="2024-01-19T15:03:28 IST" depends-on-methods="api.test.CreativeTest.getCreativeGroupList" duration-ms="479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleCreativeGroup -->
+        <test-method signature="updateCreativeGroup()[pri:4, instance:api.test.CreativeTest@7975d1d8]" started-at="2024-01-19T15:03:28 IST" name="updateCreativeGroup" finished-at="2024-01-19T15:03:29 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateCreativeGroup -->
+        <test-method signature="deleteCreativeGroup()[pri:5, instance:api.test.CreativeTest@7975d1d8]" started-at="2024-01-19T15:03:29 IST" name="deleteCreativeGroup" finished-at="2024-01-19T15:03:29 IST" duration-ms="458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCreativeGroup -->
+        <test-method signature="getlistCreatives()[pri:6, instance:api.test.CreativeTest@7975d1d8]" started-at="2024-01-19T15:03:29 IST" name="getlistCreatives" finished-at="2024-01-19T15:03:30 IST" duration-ms="503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getlistCreatives -->
+        <test-method signature="getSingleCreative()[pri:7, instance:api.test.CreativeTest@7975d1d8]" started-at="2024-01-19T15:03:30 IST" name="getSingleCreative" finished-at="2024-01-19T15:03:30 IST" duration-ms="453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleCreative -->
+      </class> <!-- api.test.CreativeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
