@@ -9,8 +9,6 @@ import static io.restassured.RestAssured.*;
 
 public class CreativesEndPoint
 {
-	static String token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGllbnRfaWQiOjEsInVzZXJfaWQiOjEsImNsaWVudF90eXBlIjoxLCJlbWFpbF9pZCI6ImFkbWluQG9wZW5kLmNvbSIsImJyb3dzZXIiOiJjaHJvbWUiLCJjcmVhdGVkX2RhdGUiOiIyMDI0LTAxLTE5IDA4OjU5OjA3LjAzNTQwNCswMDowMCIsIm9zIjoidWJ1bnR1IiwiZGV2aWNlIjoiZGVsbCIsImlwIjoiMTM0LjIwOS4yMy4xNyIsInVzZXJfYWdlbnQiOiJBcGFjaGUtSHR0cENsaWVudC80LjUuMTMgKEphdmEvMTcuMC44LjEpIiwiaWF0IjoxNzA1NjU0NzQ3LCJleHAiOjE3MDU2NTY1NDd9.VkSMRjHa_uP282M4rX7o7l0yepft8pvG22EIaYi08nQ";
- 
 	
 	/*-----------------------------------------------------Creative groups--------------------------------------------------------------*/
 	
